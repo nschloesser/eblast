@@ -1,20 +1,50 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+** NOTE **
+This template comes with a lot of standard features
+that has been thoroughly tested on major platforms
+and devices, it is extremely flexible to use and
+can be easily customized by removing any row that
+you do not need.
+
+it is gauranteed to work 95% without any major flaws,
+any changes or adjustments should thoroughly be
+tested and reviewed to match with the general
+structure.
+
+
+** Quick modification **
+We are using width of 600 for the whole content,
+you can change it any size you want (e.g. 600).
+The fastest and safest way is to use find & replace
+Sizes: [
+		wrapper   : '600',
+		columns   : '210',
+		x-columns : [
+						left : '90',
+						right: '350'
+				]
+		}
+	-->
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 	<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="format-detection" content="telephone=no" /> <!-- disable auto telephone linking in iOS -->
-		<title>People in your church are hurting. How will you help them?</title>
+		<title>How does your church handle secret struggles?</title>
 		<style type="text/css">
 			/* RESET STYLES */
 			html { background-color:#E1E1E1; margin:0; padding:0; }
-			body, #bodyTable, #bodyCell, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;font-family:"Helvetica", "Arial", "Lucida Grande", sans-serif;}
+			body, #bodyTable, #bodyCell, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;font-family:Helvetica, Arial, "Lucida Grande", sans-serif;}
 			table{border-collapse:collapse;}
 			table[id=bodyTable] {width:100%!important;margin:auto;max-width:600px!important;color:#7A7A7A;font-weight:normal;}
 			img, a img{border:0; outline:none; text-decoration:none;height:auto; line-height:100%;}
-			a {text-decoration:none !important; color: #0175bb;}
-			h1, h2, h3, h4, h5, h6{color:#5F5F5F; font-weight:normal; font-family:"Helvetica"; font-size:20px; line-height:125%; text-align:Left; letter-spacing:normal;margin-top:0;margin-right:0;margin-bottom:10px;margin-left:0;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;}
+			a {text-decoration:none !important;border-bottom: 1px solid;}
+			h1, h2, h3, h4, h5, h6{color:#5F5F5F; font-weight:normal; font-family:Helvetica; font-size:20px; line-height:125%; text-align:Left; letter-spacing:normal;margin-top:0;margin-right:0;margin-bottom:10px;margin-left:0;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;}
+
 			/* CLIENT-SPECIFIC STYLES */
 			.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail/Outlook.com to display emails at full width. */
 			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{line-height:100%;} /* Force Hotmail/Outlook.com to display line heights normally. */
@@ -23,6 +53,8 @@
 			img{-ms-interpolation-mode: bicubic;display:block;outline:none; text-decoration:none;} /* Force IE to smoothly render resized images. */
 			body, table, td, p, a, li, blockquote{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; font-weight:normal!important;} /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
 			.ExternalClass td[class="ecxflexibleContainerBox"] h3 {padding-top: 10px !important;} /* Force hotmail to push 2-grid sub headers down */
+
+
 			/* ========== Page Styles ========== */
 			h1{display:block;font-size:26px;font-style:normal;font-weight:normal;line-height:100%;}
 			h2{display:block;font-size:20px;font-style:normal;font-weight:normal;line-height:120%;}
@@ -31,20 +63,22 @@
 			.flexibleImage{height:auto;}
 			.linkRemoveBorder{border-bottom:0 !important;}
 			table[class=flexibleContainerCellDivider] {padding-bottom:0 !important;padding-top:0 !important;}
+
 			body, #bodyTable{background-color:#E1E1E1;}
 			#emailHeader{background-color:#E1E1E1;}
 			#emailBody{background-color:#FFFFFF; border: 1px solid #cecece;}
 			#emailFooter{background-color:#E1E1E1;}
 			.nestedContainer{background-color:#F8F8F8; border:1px solid #CCCCCC;}
 			.emailButton{background-color:#205478; border-collapse:separate;}
-			.buttonContent{color:#FFFFFF; font-family:"Helvetica"; font-size:18px; font-weight:bold; line-height:100%; padding:15px; text-align:center;}
+			.buttonContent{color:#FFFFFF; font-family:Helvetica; font-size:18px; font-weight:bold; line-height:100%; padding:15px; text-align:center;}
 			.buttonContent a{color:#FFFFFF; display:block; text-decoration:none!important; border:0!important;}
 			.emailCalendar{background-color:#FFFFFF; border:1px solid #CCCCCC;}
-			.emailCalendarMonth{background-color:#205478; color:#FFFFFF; font-family:"Helvetica", "Arial", sans-serif; font-size:16px; font-weight:bold; padding-top:10px; padding-bottom:10px; text-align:center;}
+			.emailCalendarMonth{background-color:#205478; color:#FFFFFF; font-family:Helvetica, Arial, sans-serif; font-size:16px; font-weight:bold; padding-top:10px; padding-bottom:10px; text-align:center;}
 			.emailCalendarDay{color:#205478; font-family:Helvetica, Arial, sans-serif; font-size:60px; font-weight:bold; line-height:100%; padding-top:20px; padding-bottom:20px; text-align:center;}
 			.imageContentText {margin-top: 10px;line-height:0;}
 			.imageContentText a {line-height:0;}
 			#invisibleIntroduction {display:none !important;} /* Removing the introduction text from the view */
+
 			/*FRAMEWORK HACKS & OVERRIDES */
 			span[class=ios-color-hack] a {color:#275100!important;text-decoration:none!important;} /* Remove all link colors in IOS (below are duplicates based on the color preference) */
 			span[class=ios-color-hack2] a {color:#205478!important;text-decoration:none!important;}
@@ -151,11 +185,31 @@
 		<![endif]-->
 	</head>
 	<body bgcolor="#E1E1E1"  leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" >
+
+		<!-- CENTER THE EMAIL // -->
+		<!--
+		1.  The center tag should normally put all the
+			content in the middle of the email page.
+			I added "table-layout: fixed;" style to force
+			yahoomail which by default put the content left.
+
+		2.  For hotmail and yahoomail, the contents of
+			the email starts from this center, so we try to
+			apply necessary styling e.g. background-color.
+		-->
 		<center style="background-color:#E1E1E1;">
 			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="table-layout: fixed;max-width:100% !important;width: 100% !important;min-width: 100% !important;">
 				<tr>
 					<td align="center" valign="top" id="bodyCell">
+
+						<!-- EMAIL HEADER // -->
+						<!--
+							The table "emailBody" is the email's container.
+							Its width can be set to 100% for a color band
+							that spans the width of the page.
+						-->
 						<table bgcolor="#E1E1E1" border="0" cellpadding="0" cellspacing="0" width="600" id="emailHeader">
+
 							<!-- HEADER ROW // -->
 							<tr>
 								<td align="center" valign="top">
@@ -171,12 +225,22 @@
 															<!-- CONTENT TABLE // -->
 															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
+																	<!--
+																		The "invisibleIntroduction" is the text used for short preview
+																		of the email before the user opens it (50 characters max). Sometimes,
+																		you do not want to show this message depending on your design but this
+																		text is highly recommended.
+
+																		You do not have to worry if it is hidden, the next <td> will automatically
+																		center and apply to the width 100% and also shrink to 50% if the first <td>
+																		is visible.
+																	-->
 																	<td align="left" valign="middle" id="invisibleIntroduction" class="flexibleContainerBox" style="display:none !important; mso-hide:all;">
 																		<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:100%;">
 																			<tr>
 																				<td align="left" class="textContent">
 																					<div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;">
-																						There’s a secret sin eroding your church, and it’s not just going to go away.
+																						The introduction of your message preview goes here. Try to make it short.
 																					</div>
 																				</td>
 																			</tr>
@@ -188,7 +252,7 @@
 																				<td align="left" class="textContent">
 																					<!-- CONTENT // -->
 																					<div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;">
-																						If you can't see this message, <a href="http://setfreesummit.org/eblast/index.html" target="_blank" style="text-decoration:none;border-bottom:1px solid #828282;color:#828282;"><span style="color:#828282;">view&nbsp;it&nbsp;in&nbsp;your&nbsp;browser</span></a>.
+																						If you can't see this message, <a href="#" target="_blank" style="text-decoration:none;border-bottom:1px solid #828282;color:#828282;"><span style="color:#828282;">view&nbsp;it&nbsp;in&nbsp;your&nbsp;browser</span></a>.
 																					</div>
 																				</td>
 																			</tr>
@@ -211,7 +275,115 @@
 						</table>
 						<!-- // END -->
 
+						<!-- EMAIL BODY // -->
+						<!--
+							The table "emailBody" is the email's container.
+							Its width can be set to 100% for a color band
+							that spans the width of the page.
+						-->
 						<table bgcolor="#FFFFFF"  border="0" cellpadding="0" cellspacing="0" width="600" id="emailBody">
+
+							<!-- MODULE ROW // -->
+							<!--
+								To move or duplicate any of the design patterns
+								in this email, simply move or copy the entire
+								MODULE ROW section for each content block.
+							-->
+							<!-- MODULE ROW // -->
+							<tr>
+								<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #4986a2">
+										<tr style="padding-top:0;">
+											<td align="center" valign="top">
+												<!-- FLEXIBLE CONTAINER // -->
+												<table border="0" cellpadding="30" cellspacing="0" width="600" class="flexibleContainer" style="background-color: #4986a2">
+													<tr>
+														<td style="padding-top:15px; padding-bottom:0px" align="center" valign="top" width="600" class="flexibleContainerCell">
+
+															<!-- CONTENT TABLE // -->
+															<table border="0" cellpadding="0" cellspacing="0" width="50%" class="emailButton" style="background-color: #4986a2;">
+																<tr>
+																	<td align="center" valign="middle" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">
+																		<a style="color:#4986a2;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="#" target="_blank"><img src="http://setfreesummit.org/wp-content/themes/eventix-child/img/circle-white-lines.png" width="200" class="flexibleImage" style="max-width:100%;" alt="Text" title="Text" /></a>
+																	</td>
+																</tr>
+															</table>
+															<!-- // CONTENT TABLE -->
+
+														</td>
+													</tr>
+												</table>
+												<!-- // FLEXIBLE CONTAINER -->
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+							<!-- // MODULE ROW -->
+							<!-- MODULE ROW // -->
+							<!--  The "mc:hideable" is a feature for MailChimp which allows
+								you to disable certain row. It works perfectly for our row structure.
+								http://kb.mailchimp.com/article/template-language-creating-editable-content-areas/
+							-->
+							<tr mc:hideable>
+								<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f5d55c">
+										<tr>
+											<td align="center" valign="top">
+												<!-- FLEXIBLE CONTAINER // -->
+												<table border="0" cellpadding="15" cellspacing="0" width="600" class="flexibleContainer">
+													<tr>
+														<td valign="top" width="600" class="flexibleContainerCell">
+
+															<!-- CONTENT TABLE // -->
+															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f5d55c">
+																<tr>
+																	<td align="left" valign="top" class="flexibleContainerBox">
+																		<table border="0" cellpadding="0" cellspacing="0" width="180" style="max-width: 100%;">
+																			<tr>
+																				<td align="left" class="textContent">
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:35px;font-weight:normal;margin-top:0;margin-bottom:-20px;text-align:center;">30</h3>
+																					<p style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;text-align:center;">Speakers</p>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td align="left" valign="top" class="flexibleContainerBox">
+																		<table border="0" cellpadding="0" cellspacing="0" width="180" style="max-width: 100%;">
+																			<tr>
+																				<td align="left" class="textContent">
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:35px;font-weight:normal;margin-top:0;margin-bottom:-20px;text-align:center;">4</h3>
+																					<p style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;text-align:center;">Days</p>																																		</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td align="right" valign="middle" class="flexibleContainerBox">
+																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="180" style="max-width: 100%;">
+																			<tr>
+																				<td align="left" class="textContent">
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:35px;font-weight:normal;margin-top:0;margin-bottom:-20px;text-align:center;">1</h3>
+																					<p style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;text-align:center;">Massive Problem</p>																																</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+															<!-- // CONTENT TABLE -->
+
+														</td>
+													</tr>
+												</table>
+												<!-- // FLEXIBLE CONTAINER -->
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+							<!-- // MODULE ROW -->
 
 							<!-- // MODULE ROW -->
 							<tr>
@@ -232,7 +404,7 @@
 													Most content tables within can then be
 													given 100% widths.
 												-->
-												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer" style="border-bottom: 2px solid #f5d55c">
+												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
 													<tr>
 														<td align="center" valign="top" width="00" class="flexibleContainerCell">
 
@@ -245,8 +417,9 @@
 															<table border="0" cellpadding="30" cellspacing="0" width="100%">
 																<tr>
 																	<td align="center" valign="top" class="textContent">
-																		<h2 style="text-align:center;font-weight:normal;margin-top: 10px; font-family:'Helvetica',Arial,sans-serif;font-size:21px;margin-bottom:0px;color:#f9f9f9;line-height:135%;">"Pornography is the greatest cancer in the church today."</h2>
-																			<p style="color: #ffffff; font-family:'Helvetica',Arial,sans-serif;text-align:center;">- Chuck Swindoll</p>
+																		<h1 style="color:#FFFFFF;line-height:100%;font-family:Helvetica,Arial,sans-serif;font-size:35px;font-weight:normal;margin-bottom:5px;text-align:center;">Fight Porn In Your Church</h1>
+																		<h2 style="text-align:center;font-weight:normal;font-family:Helvetica,Arial,sans-serif;font-size:23px;margin-bottom:10px;color:#f9f9f9;line-height:135%;">April 4 - 7, 2016</h2>
+																		<div style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:18px;margin-bottom:0;color:#FFFFFF;line-height:135%; padding-top: 10px">"Pornography is the greatest cancer in the church today." <br>-Chuck Swindoll</div>
 																	</td>
 																</tr>
 															</table>
@@ -263,9 +436,10 @@
 								</td>
 							</tr>
 							<!-- // MODULE ROW -->
+
 							<!-- MODULE ROW // -->
 							<tr>
-								<td align="center" valign="top" >
+								<td align="center" valign="top" style="border-top: 4px solid #f5d55c;">
 									<!-- CENTERING TABLE // -->
 									<table border="0" cellpadding="0" cellspacing="0" width="100%">
 										<tr>
@@ -279,8 +453,7 @@
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td valign="top" class="imageContent">
-																		<img src="http://setfreesummit.org/eblast/img/set-free-summit-april-4-7-2016.jpg" width="600" class="flexibleImage" style="max-width:600px;width:100%; display:block;" alt="Nothing destroys a person’s faith faster than Internet porn. Let’s do something about it. Set Free Summit | April 4-7, 2016 | Greensboro, NC
-" title="Nothing destroys a person’s faith faster than Internet porn. Let’s do something about it." />
+																		<img src="img/mountain-1.jpg" width="600" class="flexibleImage" style="max-width:600px;width:100%; display:block;" alt="Text" title="Text" />
 																	</td>
 																</tr>
 															</table>
@@ -296,49 +469,7 @@
 									<!-- // CENTERING TABLE -->
 								</td>
 							</tr>
-							<!-- // MODULE ROW -->
 							
-							<tr>
-                            	<td align="center" valign="top">
-                                	<!-- BEGIN COLUMNS // -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns" style="background-color: #f5d55c">
-                                    	<tr mc:repeatable>
-                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:10px;">
-                                            	<table border="0" cellpadding="10" cellspacing="0" width="100%">
-                                                    <tr>
-                                                    	<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-                                                            <h3 style="text-align: center; color:#3d3d3d;font-size: 30px;">30</h3>
-                                                            <p style="text-align: center;color:#5F5F5F;">Speakers</p>                                                        
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:10px;">
-                                            	<table border="0" cellpadding="10" cellspacing="0" width="100%">
-                                                    <tr>
-                                                    	<td valign="top" class="centerColumnContent" mc:edit="center_column_content">
-                                                            <h3 style="text-align: center; color:#3d3d3d;font-size: 30px;">4</h3>
-                                                            <p style="text-align: center;color:#5F5F5F;">Days</p>                                                        
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:10px;">
-                                            	<table border="0" cellpadding="10" cellspacing="0" width="100%">
-                                                    <tr>
-                                                    	<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
-                                                            <h3 style="text-align: center; color:#3d3d3d;font-size: 30px;">1</h3>
-                                                            <p style="text-align: center;color:#5F5F5F;">Massive<br> Problem</p>                                                        
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- // END COLUMNS -->
-                                </td>
-                            </tr>
-
 							<!-- MODULE ROW // -->
 							<tr>
 								<td align="center" valign="top">
@@ -363,18 +494,8 @@
 																						you to edit certain row. It makes it easy for you to quickly edit row sections.
 																						http://kb.mailchimp.com/templates/code/create-editable-content-areas-with-mailchimps-template-language
 																					-->
-																					<h3 mc:edit="header" style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:bold;margin-top:0;margin-bottom:15px;text-align:left;">Statistically, 3 out of 5 men in your congregation have watched porn this month.<a href="http://setfreesummit.org/porn-stats/?utm_campaign=Set%20Free%20Conference&utm_content=Pastors%20Eblast%20September&utm_medium=porn-stats-link&utm_source=email" style="text-decoration: none !important">*</a> What’s that doing to their family—and your church?</h3>
-																					<div mc:edit="body" style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;text-align:left;">								
-																						<p>When’s the last time you’ve talked to one of these people?</p>
-																						<ul>
-																							<li>The husband and wife whose marriage is on the rocks because of porn?</li>
-																							<li>The mom who just found out her daughter is watching porn on their iPad®?</li>
-																							<li>The young man who got fired for watching porn at work?</li>
-																						</ul>
-																						<p>Internet pornography ruins lives: it destroys families, wrecks reputations, and tears churches apart.</p>
-																						<p>Worse yet, because people can watch porn in secret, you may not even know about it. But it’s there, and you will see it.</p>
-																						<p>What will you do?</p>
-																						</div>
+																					<h3 mc:edit="header" style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:normal;margin-top:0;margin-bottom:15px;text-align:center;">By far the greatest “encumbrance” (Hebrews 12:2) to the church and believers today is pervasive Internet pornography.</h3>
+																					<div mc:edit="body" style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;text-align:center;">The Barna Group declared, “Christian men are watching pornography at work at the same rate as the national average.” In fact, another survey showed that 3 out of 5 Christian men and 1 out of 7 Christian women watch porn at least once a month.</div>
 																				</td>
 																			</tr>
 																		</table>
@@ -394,6 +515,7 @@
 								</td>
 							</tr>
 							<!-- // MODULE ROW -->
+
 							
 							<!-- MODULE ROW // -->
 							<tr>
@@ -414,10 +536,11 @@
 																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																			<tr>
 																				<td valign="top" class="textContent">
-																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:bold;margin-top:0;margin-bottom:3px;text-align:left;">Fight the porn epidemic breaking out in your church. Attend this critical, one-time-only event.</h3>
-																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;margin-top:3px;color:#5F5F5F;line-height:135%;text-align:left;"><p>At the Set Free Summit, hosted by Josh McDowell and Covenant Eyes, you’ll learn from top ministry leaders and experts in their fields about how Internet pornography gets into and damages your congregation—and you’ll walk away with biblically, psychologically, and physiologically-based solutions to help your people find lasting freedom from porn.</p>
-<p>Seats are limited and <strong>early bird registration ends October 31,</strong> so sign up soon!</p>
-</div>
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:center;">What is your church doing about this issue?</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;margin-top:3px;color:#5F5F5F;line-height:135%;text-align:center;">
+Join Covenant Eyes and Josh McDowell Ministry at the Set Free Global Summit in Greensboro, North Carolina next April. You'll learn with — and from — a thousand other influencers as we promote positive solutions to the pervasive problem of Internet pornography.<br><br>
+
+Please attend this summit! Together, we will make sure that the destructive force of pornography will not be the legacy we leave to our children.</div>
 																				</td>
 																			</tr>
 																		</table>
@@ -442,19 +565,19 @@
 							<tr>
 								<td align="center" valign="top">
 									<!-- CENTERING TABLE // -->
-									<table border="0" bgcolor="#4986a2" cellpadding="0" cellspacing="0" width="100%">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #4986a2">
 										<tr style="padding-top:0;">
 											<td align="center" valign="top">
 												<!-- FLEXIBLE CONTAINER // -->
 												<table border="0" cellpadding="30" cellspacing="0" width="600" class="flexibleContainer">
 													<tr>
 														<td align="center" valign="top" width="600" class="flexibleContainerCell">
-															
+
 															<!-- CONTENT TABLE // -->
-															<table border="0" cellpadding="0" cellspacing="0" width="100%" class="emailButton" style="background-color: #3498DB;">
+															<table border="0" cellpadding="0" cellspacing="0" width="50%" class="emailButton" style="background-color: #4dc1ea;">
 																<tr>
-																	<td align="center" valign="middle" class="buttonContent" style="background-color:#4dc1ea; padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">
-																		<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href=" http://setfreesummit.org?utm_campaign=Set%20Free%20Conference&utm_content=Pastors-Eblast-September&utm_medium=button1&utm_source=email" target="_blank">Learn More and Register for the Set Free Summit</a>
+																	<td align="center" valign="middle" class="buttonContent" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">
+																		<a style="color:#ffffff;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="#" target="_blank">Register Today</a>
 																	</td>
 																</tr>
 															</table>
@@ -471,58 +594,40 @@
 								</td>
 							</tr>
 							<!-- // MODULE ROW -->
-														
+
 							<!-- MODULE ROW // -->
 							<tr>
 								<td align="center" valign="top">
 									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%" >
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
 										<tr>
 											<td align="center" valign="top">
-												
 												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="30" cellspacing="0" width="600" class="flexibleContainer" >
+												<table border="0" cellpadding="30" cellspacing="0" width="600" class="flexibleContainer">
 													<tr>
 														<td valign="top" width="600" class="flexibleContainerCell">
-														<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:bold;margin-top:10px;margin-bottom:30px;text-align:center;">You’ll be learning from the best!
-</h3>
+
 															<!-- CONTENT TABLE // -->
 															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td align="left" valign="top" class="flexibleContainerBox">
-																		<table border="0" cellpadding="0" cellspacing="0" width="160" style="max-width:100%;">
+																		<table border="0" cellpadding="0" cellspacing="0" width="250" style="max-width:100%;">
 																			<tr>
 																				<td align="center" class="textContent">
-																					<h3 style="color:#3d3d3d;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:normal;margin-top:10px;margin-bottom:3px;text-align:center;">Host</h3>
-																					<img src="http://setfreesummit.org/eblast/img/josh-mcdowell-320px.jpg" width="100" class="flexibleImage" style="max-width:100%;" alt="Josh McDowell" title="Josh McDowell" />
-																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;margin-top:10px;margin-bottom:3px;text-align:center;">Josh McDowell</h3>
-																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:13px;margin-bottom:0;color:#5F5F5F;line-height:135%; text-align: center">Author and Speaker <br>Josh McDowell Ministry</div>
+																					<img src="img/josh-mcdowell-square.jpg" width="150" class="flexibleImage" style="max-width:100%;" alt="Text" title="Text" />
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:10px;margin-bottom:3px;text-align:center;">Josh McDowell</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%; text-align: center">Founder and Speaker <br>Josh McDowell Ministry</div>
 																				</td>
 																			</tr>
 																		</table>
 																	</td>
 																	<td align="center" valign="" class="flexibleContainerBox">
-																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="160" style="max-width:100%;">
+																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="250" style="max-width:100%;">
 																			<tr>
 																				<td align="center" class="textContent">
-																					<h3 style="color:#3d3d3d;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:normal;margin-top:10px;margin-bottom:3px;text-align:center;">Host</h3>
-
-																					<img src="http://setfreesummit.org/eblast/img/Ron-DeHaas-headshot-square.jpg" width="100" class="flexibleImage" style="max-width:100%;" alt="Ron Dehaas" title="Ron Dehaas" />
-																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;margin-top:10px;margin-bottom:3px;text-align:center;">Ron Dehaas</h3>
-																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:13px;margin-bottom:0;color:#5F5F5F;line-height:135%;text-align: center">President<br>Covenant Eyes</div>
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																	<td align="center" valign="" class="flexibleContainerBox">
-																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="160" style="max-width:100%;">
-																			<tr>
-																				<td align="center" class="textContent">
-																					<h3 style="color:#3d3d3d;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:normal;margin-top:10px;margin-bottom:3px;text-align:center;">Speaker</h3>
-
-																					<img src="http://setfreesummit.org/eblast/img/jay-dennis.jpg" width="100" class="flexibleImage" style="max-width:100%;" alt="Dr. Jay Dennis" title="Dr. Jay Dennis" />
-																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;margin-top:10px;margin-bottom:3px;text-align:center;">Dr. Jay Dennis</h3>
-																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:13px;margin-bottom:0;color:#5F5F5F;line-height:135%;text-align: center">Pastor and Founder<br>One Million Men Movement</div>
+																					<img src="img/Ron-DeHaas-headshot-square.jpg" width="150" class="flexibleImage" style="max-width:100%;" alt="Text" title="Text" />
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:10px;margin-bottom:3px;text-align:center;">Ron Dehaas</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;text-align: center">President<br>Covenant Eyes</div>
 																				</td>
 																			</tr>
 																		</table>
@@ -530,81 +635,43 @@
 																</tr>
 															</table>
 															<!-- // CONTENT TABLE -->
+
 														</td>
 													</tr>
 												</table>
 												<!-- // FLEXIBLE CONTAINER -->
-												
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="30" cellspacing="0" width="600" class="flexibleContainer" >
-													<tr>
-														<td valign="top" width="600" class="flexibleContainerCell">
-													
-															<!-- CONTENT TABLE // -->
-															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-																<tr>
-																	<td align="left" valign="top" class="flexibleContainerBox">
-																		<table border="0" cellpadding="0" cellspacing="0" width="160" style="max-width:100%;">
-																			<tr>
-																				<td align="center" class="textContent">
-																					<h3 style="color:#3d3d3d;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:normal;margin-top:10px;margin-bottom:3px;text-align:center;">Speaker</h3>
-																					<img src="http://setfreesummit.org/eblast/img/william-struthers-cropped.jpg" width="100" class="flexibleImage" style="max-width:100%;" alt="Dr. William Struthers" title="Dr. William Struthers" />
-																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;margin-top:10px;margin-bottom:3px;text-align:center;">Dr. William Struthers</h3>
-																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:13px;margin-bottom:0;color:#5F5F5F;line-height:135%; text-align: center">Neuroscientist<br>Wheaton College</div>
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																	<td align="center" valign="" class="flexibleContainerBox">
-																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="160" style="max-width:100%;">
-																			<tr>
-																				<td align="center" class="textContent">
-																					<h3 style="color:#3d3d3d;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:normal;margin-top:10px;margin-bottom:3px;text-align:center;">Speaker</h3>
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+							<!-- // MODULE ROW -->
 
-																					<img src="http://setfreesummit.org/eblast/img/shelley-lubben.jpg" width="100" class="flexibleImage" style="max-width:100%;" alt="Shelley Lubben" title="Shelley Lubben" />
-																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;margin-top:10px;margin-bottom:3px;text-align:center;">Shelley Lubben</h3>
-																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:13px;margin-bottom:0;color:#5F5F5F;line-height:135%;text-align: center">Ex-Porn Star and Founder<br>The Pink Cross Foundation</div>
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																	<td align="center" valign="" class="flexibleContainerBox">
-																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="160" style="max-width:100%;">
-																			<tr>
-																				<td align="center" class="textContent">
-																					<h3 style="color:#3d3d3d;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:normal;margin-top:10px;margin-bottom:3px;text-align:center;">Speaker</h3>
 
-																					<img src="http://setfreesummit.org/eblast/img/bernie-anderson.jpg" width="100" class="flexibleImage" style="max-width:100%;" alt="Bernie Anderson" title="Bernie Anderson" />
-																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;margin-top:10px;margin-bottom:3px;text-align:center;">Bernie Anderson</h3>
-																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:13px;margin-bottom:0;color:#5F5F5F;line-height:135%;text-align: center">Pastor and Author<br>
-Breaking the Silence</div>
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																</tr>
-															</table>
-															<!-- // CONTENT TABLE -->
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
+							<!-- MODULE DIVIDER // -->
+							<tr>
+								<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="center" valign="top">
 												<!-- FLEXIBLE CONTAINER // -->
 												<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
 													<tr>
 														<td align="center" valign="top" width="600" class="flexibleContainerCell">
-															<table border="0" cellpadding="30" cellspacing="0" width="100%">
+															<table class="flexibleContainerCellDivider" border="0" cellpadding="30" cellspacing="0" width="100%">
 																<tr>
-																	<td align="center" valign="top">
+																	<td align="center" valign="top" style="padding-top:0px;padding-bottom:0px;">
+
 																		<!-- CONTENT TABLE // -->
 																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																			<tr>
-																				<td valign="top" class="textContent">
-																					<p style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;margin-top:3px;color:#5F5F5F;line-height:150%;text-align:center;">The list of expert presenters also includes the Barna Group, Jacob Aranza, Steve Arterburn, Dr. Donald Hilton, Dr. Mary Anne Layden, Patrick Trueman, Dawn Hawkins, Dr. Judith Reisman, Fr. Sean Kilcawley, Mark Laaser, Jayson Graves, Jessica Harris, Kenny Luck, Jill Manning, Dr. Doug Weiss, Donna Rice Hughes, Sean McDowell, Michael Leahy, Clay Olsen, Dr. Ted Roberts, and Luke Gilkerson.</p>
-																				</td>
+																				<td align="center" valign="top" style="border-top:1px solid #C8C8C8;"></td>
 																			</tr>
 																		</table>
 																		<!-- // CONTENT TABLE -->
+
 																	</td>
 																</tr>
 															</table>
@@ -618,8 +685,69 @@ Breaking the Silence</div>
 									<!-- // CENTERING TABLE -->
 								</td>
 							</tr>
-							<!-- // MODULE ROW -->							
+							<!-- // END -->
 							
+							<!-- MODULE ROW // -->
+							<tr>
+								<td align="center" valign="top">
+									<!-- CENTERING TABLE // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="center" valign="top">
+												<!-- FLEXIBLE CONTAINER // -->
+												<table border="0" cellpadding="30" cellspacing="0" width="600" class="flexibleContainer">
+													<tr>
+														<td valign="top" width="600" class="flexibleContainerCell">
+
+															<!-- CONTENT TABLE // -->
+															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+																<tr>
+																	<td align="left" valign="top" class="flexibleContainerBox">
+																		<table border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
+																			<tr>
+																				<td align="left" class="textContent">
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:center;">Who Should Attend?</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">
+																						<ul style="display: block;list-style-type: none;margin-top: 10px;margin-bottom: 1 em;margin-left: 0;margin-right: 0;line-height: 20px;text-align: center;padding-left: 0px;">
+																							<li>Pastors</li>
+																							<li>Christian Leaders </li>
+																							<li>Parents</li>
+																							<li>Youth Leaders</li>
+																							<li> Counselors</li>
+																							<li> Camp Directors</li>
+																							<li> School Administrators</li>
+																							<li> Physicians</li>
+																							<li> Business Leaders</li>
+																						</ul>
+																					</div>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td align="right" valign="top" class="flexibleContainerBox">
+																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="310" style="max-width:100%;">
+																			<tr>
+																				<td align="left" class="textContent">
+																					<img src="img/guy_with_guy.jpg" width="310" class="flexibleImage" style="max-width:100%;" alt="Text" title="Text" />
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+															<!-- // CONTENT TABLE -->
+
+														</td>
+													</tr>
+												</table>
+												<!-- // FLEXIBLE CONTAINER -->
+											</td>
+										</tr>
+									</table>
+									<!-- // CENTERING TABLE -->
+								</td>
+							</tr>
+							<!-- // MODULE ROW -->
 							<!-- MODULE ROW // -->
 							<tr>
 								<td align="center" valign="top">
@@ -634,22 +762,24 @@ Breaking the Silence</div>
 															<table border="0" cellpadding="30" cellspacing="0" width="100%">
 																<tr>
 																	<td align="center" valign="top">
+
 																		<!-- CONTENT TABLE // -->
 																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																			<tr>
 																				<td valign="top" class="textContent">
-																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:bold;margin-top:0;margin-bottom:3px;text-align:center;">What you'll learn</h3>
-																					<div style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:14px;margin-bottom:0;margin-top:3px;color:#5F5F5F;line-height:135%;text-align:center;">
-																						<p>The true scope of Internet pornography</p>
-																						<p>The results of a <strong>landmark Barna study!</strong></p>
-																						<p>How it hurts brains, marriages, and churches </p>
-																						<p>Concrete and effective solutions</p>
-																						<p>Tools to help you protect your church</p>
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:center;">What You'll Learn</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:14px;margin-bottom:0;margin-top:3px;color:#5F5F5F;line-height:135%;text-align:center;">
+																						<p>An understanding of the scope of the Internet pornography issue</p>
+																						<p>Trustworthy guidance on the medical, moral, psychological, and spiritual implications</p>
+																						<p>Concrete solutions that are culturally effective and can be implemented</p>
+																						<p>Concrete solutions that are culturally effective and can be implemented</p>
+																						<p>Credentialed resources to equip leaders to address the problem in their homes, churches, and communities</p>
 																					</div>
 																				</td>
 																			</tr>
 																		</table>
 																		<!-- // CONTENT TABLE -->
+
 																	</td>
 																</tr>
 															</table>
@@ -679,10 +809,10 @@ Breaking the Silence</div>
 															<h3 style="color:#ffffff;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:10px;text-align:center;">Join us for this once in a lifetime event!</h3>
 
 															<!-- CONTENT TABLE // -->
-															<table border="0" cellpadding="0" cellspacing="0" width="100%" class="emailButton" style=" margin: auto !important; background-color: #4dc1ea;">
+															<table border="0" cellpadding="0" cellspacing="0" width="50%" class="emailButton" style="background-color: #4dc1ea;">
 																<tr>
 																	<td align="center" valign="middle" class="buttonContent" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">
-																		<a style="color:#ffffff;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href=" http://setfreesummit.org?utm_campaign=Set%20Free%20Conference&utm_content=Pastors-Eblast-September&utm_medium=button2&utm_source=email" target="_blank">Register Today</a>
+																		<a style="color:#ffffff;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="#" target="_blank">Register Today</a>
 																	</td>
 																</tr>
 															</table>
@@ -699,6 +829,8 @@ Breaking the Silence</div>
 								</td>
 							</tr>
 							<!-- // MODULE ROW -->
+
+							
 
 							<!-- MODULE ROW // -->
 							<tr>
@@ -719,7 +851,7 @@ Breaking the Silence</div>
 																		<table border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
 																			<tr>
 																				<td align="left" class="textContent">
-																					<img src="http://i1.wp.com/setfreesummit.org/wp-content/uploads/2015/07/fight-porn-in-your-church-cover.jpg?resize=232%2C300" width="210" class="flexibleImage" style="max-width:100%;" alt="Fight Porn In Your Church" title="Fight Porn In Your Church" />
+																					<img src="http://i1.wp.com/setfreesummit.org/wp-content/uploads/2015/07/fight-porn-in-your-church-cover.jpg?resize=232%2C300" width="210" class="flexibleImage" style="max-width:100%;" alt="Text" title="Text" />
 																				</td>
 																			</tr>
 																		</table>
@@ -728,23 +860,11 @@ Breaking the Silence</div>
 																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="280" style="max-width:100%;">
 																			<tr>
 																				<td align="left" class="textContent">
-																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;"><strong>Free E-book:</strong> <br>Fight Porn In Your Church
-</h3>
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Free E-Book Download</h3>
 																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">
-																					<p>Not sure that porn is such a big deal in your church? Or just don’t want to wait until April to start taking action?</p>				
-																					<p>Download this free e-book to hear from church leaders like you on how porn has affected their ministry…and what you can do to stop it.</p></div>
-																					
-																					<!-- CONTENT TABLE // -->
-																					<table border="0" cellpadding="0" cellspacing="0" width="100%" class="emailButton" style=" margin: auto !important; background-color: #0175bb;">
-																						<tr>
-																							<td align="center" valign="middle" class="buttonContent" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">
-																								<a style="color:#ffffff !important;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:135%;" href=" http://setfreesummit.org/fight-porn-your-church/?utm_campaign=Set%20Free%20Conference&utm_content=Pastors-Eblast-September&utm_medium=ebook-button&utm_source=email" target="_blank">Download E-book</a>
-																							</td>
-																						</tr>
-																					</table>
-																					<!-- // CONTENT TABLE -->
-																					
-																					
+																					<p>Fight Porn In Your Church</p>
+																					<p>Porn is a huge problem in the church. In fact, 64% of Christian men and 15% of Christian women say they watch porn at least once a month. And yet, very few pastors know how to even bring up the issue, let alone lead their church in the battle against this sin.</p>				
+																					<p>In Fight Porn In Your Church, you’ll get practical steps from church leaders on how to help your church fight porn—now.</p></div>
 																				</td>
 																			</tr>
 																		</table>
@@ -764,9 +884,26 @@ Breaking the Silence</div>
 								</td>
 							</tr>
 							<!-- // MODULE ROW -->
+
+
+							
 						</table>
 						<!-- // END -->
+
+						<!-- EMAIL FOOTER // -->
+						<!--
+							The table "emailBody" is the email's container.
+							Its width can be set to 100% for a color band
+							that spans the width of the page.
+						-->
 						<table bgcolor="#E1E1E1" border="0" cellpadding="0" cellspacing="0" width="600" id="emailFooter">
+
+							<!-- FOOTER ROW // -->
+							<!--
+								To move or duplicate any of the design patterns
+								in this email, simply move or copy the entire
+								MODULE ROW section for each content block.
+							-->
 							<tr>
 								<td align="center" valign="top">
 									<!-- CENTERING TABLE // -->
@@ -780,10 +917,12 @@ Breaking the Silence</div>
 															<table border="0" cellpadding="30" cellspacing="0" width="100%">
 																<tr>
 																	<td valign="top" bgcolor="#E1E1E1">
+
 																		<div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;">
-																			<div>Copyright &#169; 2015 <a href="http://www.covenanteyes.com" target="_blank" style="text-decoration:none;color:#828282;"><span style="color:#828282;">Covenant Eyes</span></a>. All&nbsp;rights&nbsp;reserved.</div>
-																			<div>If you do not want to receive emails from us, you can <a href="#" target="_blank" style="text-decoration:none;color:#828282;"><span style="color:#828282;">unsubscribe</span></a>.</div>
+																			<div>Copyright &#169; 2015 <a href="http://www.charlesmudy.com/respmail/" target="_blank" style="text-decoration:none;color:#828282;"><span style="color:#828282;">Covenant Eyes</span></a>. All&nbsp;rights&nbsp;reserved.</div>
+																			<div>If you do not want to recieve emails from us, you can <a href="#" target="_blank" style="text-decoration:none;color:#828282;"><span style="color:#828282;">unsubscribe</span></a>.</div>
 																		</div>
+
 																	</td>
 																</tr>
 															</table>
@@ -797,8 +936,10 @@ Breaking the Silence</div>
 									<!-- // CENTERING TABLE -->
 								</td>
 							</tr>
+
 						</table>
 						<!-- // END -->
+
 					</td>
 				</tr>
 			</table>
